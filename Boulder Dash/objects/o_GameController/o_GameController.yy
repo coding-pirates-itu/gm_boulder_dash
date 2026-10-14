@@ -29,7 +29,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"diamonds_needed","filters":[],"listItems":[],"multiselect":false,"name":"diamonds_needed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"DiamondsNeeded","filters":[],"listItems":[],"multiselect":false,"name":"DiamondsNeeded","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"IsExitOpen","filters":[],"listItems":[],"multiselect":false,"name":"IsExitOpen","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

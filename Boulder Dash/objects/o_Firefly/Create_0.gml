@@ -1,6 +1,6 @@
-move_delay = 10;   // steps between two moves (smaller = faster)
 move_dir = 180;    // 0 = right, 90 = up, 180 = left, 270 = down
-alarm[0] = move_delay;
+alarm[0] = MoveDelay;
+
 
 function Die()
 {

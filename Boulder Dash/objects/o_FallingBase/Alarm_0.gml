@@ -1,6 +1,6 @@
-alarm[0] = fall_delay;
+alarm[0] = FallDelay;
 
-// 1. The cell below is empty: fall down one cell
+// The cell below is empty: fall down one cell
 if (place_empty(x, y + TILE))
 {
     y += TILE;
@@ -8,13 +8,13 @@ if (place_empty(x, y + TILE))
     exit;
 }
 
-// 2. We were falling and have just landed on something
+// We were falling and have just landed on something
 if (falling)
 {
     falling = false;
     audio_play_sound(snd_Boulder, 1, false);
 
-    // Landed on the player or a firefly? Boom!
+    // Landed on the player or a firefly?
     var victim = instance_place(x, y + TILE, [o_Player, o_Firefly]);
     if (victim != noone)
     {
@@ -23,8 +23,8 @@ if (falling)
     }
 }
 
-// 3. Lying on a boulder, a diamond or a wall: roll off to the side
-if (place_meeting(x, y + TILE, o_FallingBase) || place_meeting(x, y + TILE, o_Wall))
+// Lying on a boulder, a diamond or a wall: roll off to the side (left preferred)
+if (place_meeting(x, y + TILE, o_FallingBase))
 {
     if (place_empty(x - TILE, y) && place_empty(x - TILE, y + TILE))
     {

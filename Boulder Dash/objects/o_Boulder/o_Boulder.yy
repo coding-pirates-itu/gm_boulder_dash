@@ -1,8 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"o_Boulder",
-  "eventList":[
-  ],
+  "eventList":[],
   "managed":true,
   "name":"o_Boulder",
   "overriddenProperties":[],
@@ -27,8 +26,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

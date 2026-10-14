@@ -34,7 +34,7 @@ else
     exit;
 }
 
-move_timer = move_delay;
+move_timer = MoveDelay;
 
 // The cell we want to move to
 var new_x = x + dx * TILE;
@@ -49,11 +49,7 @@ if (place_meeting(new_x, new_y, o_Wall))
 // The exit: go to the next level, but only when it is open
 if (place_meeting(new_x, new_y, o_Exit))
 {
-    if (o_Exit.is_open)
-    {
-        audio_play_sound(snd_Win, 1, false);
-        room_goto_next();
-    }
+    o_GameController.PlayerOnExit();
     exit;
 }
 
@@ -72,6 +68,7 @@ if (boulder != noone)
     {
         exit;
     }
+    // Move the boulder, then move self
     boulder.x += dx * TILE;
 }
 
@@ -91,6 +88,6 @@ if (diamond != noone)
     o_GameController.AddDiamond();
 }
 
-// Move!
+// Move
 x = new_x;
 y = new_y;

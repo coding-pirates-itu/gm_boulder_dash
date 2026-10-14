@@ -1,10 +1,10 @@
-alarm[0] = move_delay;
+alarm[0] = MoveDelay;
 
 // The cell in front of the firefly
 var new_x = x + round(lengthdir_x(TILE, move_dir));
 var new_y = y + round(lengthdir_y(TILE, move_dir));
 
-// Is the player in front of us? Boom!
+// Is the player in front of us?
 var player = instance_place(new_x, new_y, o_Player);
 if (player != noone)
 {
